@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assessment Calculator </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       .main{
+        width: 30%;
+        height: 20%;
+        background-color: rgb(16, 172, 234);
+        margin: 10% auto;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+       }
+       .main form{
+        background-color: black;
+        width: 70%;
+        height: 20%;
+       }
+       .main form .no{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 15px;
+    
+       }
+       .main form input[type="button"]{
+        background-color: rgba(0, 0, 0, 0.052);
+        color: white;
+        opacity: 0.6;
+        border: none;
+        width: 22%;
+     font-size: 20px;
+       }
+       .main form input[type="text"]{
+        border: none;
+        width: 100%;
+        height: 60%;
+        padding: 10px;
+        text-align: end;
+       }
+       .main form input[type="text"]:focus{
+        display: none;
+       }
+       .main form input[type="reset"]{
+        background-color: black;
+        border: none;
+        color: white;
+        opacity: 0.6;
+        font-size: 20px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="cal">
+            <form name="calc">
+            <div class="ans" onclick="calc.ans.value+=calc"></div>
+            <div class="numbers">
+                <div class="num">
+                    <div class="no"> <input type="button" value="7" onclick="calc.ans.value+=calc"> </div>
+                    <div class="no"> <input type="button" value="8" onclick="calc.ans.value+=calc"> </div>
+                    <div class="no"> <input type="button" value="9" onclick="calc.ans.value+=calc"> </div>
+                    <div class="no"> <input type="button" value="4" onclick="calc.ans.value+=calc"> </div>
+                    <div class="no"> <input type="button" value="5" onclick="calc.ans.value+=calc"> </div>
+                    <div class="no"> <input type="button" value="6" onclick="calc.ans.value+=calc"> </div>
+                    <div class="no"> <input type="button" value="1" onclick="calc.ans.value+=calc"> </div>
+                    <div class="no"> <input type="button" value="2" onclick="calc.ans.value+=calc"> </div>
+                    <div class="no"> <input type="button" value="3" onclick="calc.ans.value+=calc"> </div>
+                    <div class="no"> <input type="button" value="." onclick="calc.ans.value+=calc"> </div>
+                    <div class="no"> <input type="button" value="0" onclick="calc.ans.value+=calc"> </div>
+                    <div class="no"> <input type="button" value="=" name="=" onclick="calc.ans.value=eval(calc.ans.value)"></div>
+                 </div>
+                <div class="sign">
+                    <div class="sig"> DEL </div>
+                    <div class="sig"> &#247; </div>
+                    <div class="sig"> &#215; </div>
+                    <div class="sig"> - </div>
+                    <div class="sig"> + </div>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div> -->
+
+   <div class="main">
+    
+        <form name="cal">
+            <input type="text" placeholder="Enter Number" id="ans" onclick="cal.ans.value+='cal'">
+
+            <div class="no">
+                <input type="button" value="7" onclick="cal.ans.value+=7">
+                <input type="button" value="8" onclick="cal.ans.value+=8">
+                <input type="button" value="9" onclick="cal.ans.value+=9">
+                <input type="button" value="+" onclick="cal.ans.value+='+'">
+            </div>
+            <div class="no">
+                <input type="button" value="4" onclick="cal.ans.value+=4">
+                <input type="button" value="5" onclick="cal.ans.value+=5">
+                <input type="button" value="6" onclick="cal.ans.value+=6">
+                <input type="button" value="-" onclick="cal.ans.value+='-'">
+            </div>
+            <div class="no">
+                <input type="button" value="1" onclick="cal.ans.value+=1">
+                <input type="button" value="2" onclick="cal.ans.value+=2">
+                <input type="button" value="3" onclick="cal.ans.value+=3">
+                <input type="button" value="*" onclick="cal.ans.value+='*'">
+            </div>
+            <div class="no">
+                <input type="button" value="." onclick="cal.ans.value+='.'">
+                <input type="button" value="0" onclick="cal.ans.value+=0">
+                <input type="button" value="=" name="=" onclick="cal.ans.value=eval(cal.ans.value)">
+                <input type="button" value="/" onclick="cal.ans.value+='/'">
+            </div>
+            <div class="no">
+                <input type="reset" value="Clear" onclick="cal.ans.value+='Clear'">
+                <input type="button" value="(" onclick="cal.ans.value+='('">
+                <input type="button" value=")" onclick="cal.ans.value+=')'">
+                <input type="button" value="%" onclick="cal.ans.value+='%'">
+                
+
+            </div>
+        </form>
+    </div>
+   
+
+
+</body>
+</html>
